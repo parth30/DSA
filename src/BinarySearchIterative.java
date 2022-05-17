@@ -29,7 +29,7 @@ public class BinarySearchIterative {
         int left=0,right=array.length-1;
         int mid;
         while(left<=right){
-            mid=(left+right)/2;
+            mid=(left+right)/2; // use left+(right-left)/2  so overcome the overflow senario
 
             if(array[mid]==key){
                 return  mid;
